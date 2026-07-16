@@ -1,0 +1,58 @@
+
+code = '''# PYTHON BASICS - DAY 1
+
+# 1. Python Overview
+# Created by: Guido van Rossum (1991)
+# High-level, OOPS, Interpreted Language
+
+# 2. Dynamic Typing
+num = 'yash'
+print(type(num))
+num = 9
+print(type(num))
+num = [5,6]
+print(type(num))
+
+# 3. Comments
+# Single-line comment
+""" Multi-line comment """
+
+# 4. Variables - Good Way
+_num = 90
+num = 9
+Num = 99
+num_2 = 7
+print(_num, num, Num, num_2)
+
+# 5. Variables - Bad Way (Don't do this)
+# 7num = 10
+# num& = 20
+# n n = 30
+
+# 6. Boolean Type
+num = 7
+num_2 = 77
+print(num == num_2)
+print(num != num_2)
+
+# 7. Multiple Variables - Same Value
+num = num_2 = num_3 = 77
+print(num, num_2, num_3)
+
+# 8. Multiple Variables - Different Values
+num, num_2 = 7, 77
+print(num, num_2)
+
+# 9. Swapping Variables (Python Magic)
+num = 7
+num_2 = 77
+num, num_2 = num_2, num
+print(num, num_2)
+
+print("Day 1 Completed!")'''
+
+for line in code.split('\n'):
+    pdf.cell(0, 5, line, ln=True)
+
+pdf.output("Day1_Python_Basics.pdf")
+print("PDF Created: Day1_Python_Basics.pdf")
