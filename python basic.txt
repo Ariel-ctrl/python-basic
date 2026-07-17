@@ -1,6 +1,4 @@
 
-code = '''# PYTHON BASICS - DAY 1
-
 # 1. Python Overview
 # Created by: Guido van Rossum (1991)
 # High-level, OOPS, Interpreted Language
@@ -53,6 +51,3 @@ print("Day 1 Completed!")'''
 
 for line in code.split('\n'):
     pdf.cell(0, 5, line, ln=True)
-
-pdf.output("Day1_Python_Basics.pdf")
-print("PDF Created: Day1_Python_Basics.pdf")
